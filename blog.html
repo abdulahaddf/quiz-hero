@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>Welcome to my blog</h1>
+    <h1 class="text-5xl  text-red-700 font-extrabold text-center p-10  ">Welcome to my blog</h1>
+    <div>
+        <div class="card glass">
+            <div class="card-body ">
+              <h2 class="card-title">Difference of map filter foreach and find</h2>
+              <p>1.Map: A map function is a function that applies a given function to each element of a collection (e.g., an array) and returns a new collection with the results. The new collection has the same length as the original one, but each element is transformed by the given function. <br>
+
+                2.Filter: A filter function is a function that takes a collection (e.g., an array) and a predicate function, and returns a new collection that contains only the elements that satisfy the predicate. In other words, the filter function "filters out" the elements that don't match the given criteria. <br>
+                
+                3.Find: A find function is a method or function that searches a collection (e.g., an array) for an element that satisfies a given condition, and returns the first matching element. If no element matches the condition, the function returns null or undefined. <br>
+                
+                4.ForEach: A forEach method is a function that iterates over a collection (e.g., an array) and applies a given function to each element, but it does not create a new collection. Instead, it performs some action (e.g., logging, updating a variable) on each element.</p>
+            </div>
+          </div>
+        <div class="card glass">
+            <div class="card-body ">
+              <h2 class="card-title">Difference of LocalStorage, sessionStorage, and cookies</h2>
+              <p>1.LocalStorage: LocalStorage is a type of web storage that allows you to store key/value pairs in the user's web browser with no expiration date. The data stored in LocalStorage persists even after the browser is closed and reopened, and can be accessed by any script running on the same origin (i.e., the same protocol, hostname, and port). <br>
+
+                2.SessionStorage: SessionStorage is a type of web storage that allows you to store key/value pairs in the user's web browser for a single session (i.e., as long as the browser is open and the user is browsing your website). The data stored in SessionStorage is cleared when the browser is closed, and can only be accessed by scripts running on the same page or in iframes of that page. <br>
+                
+                3.Cookies: Cookies are small text files that are stored on the user's computer by the web server. Cookies can be used to store user preferences, login credentials, and other data that needs to persist across different sessions or different websites. Cookies can also be used for tracking purposes by third-party advertisers. Cookies can be set with an expiration date or can be session cookies, which are cleared when the browser is closed.
+            </div>
+          </div>
+        <div class="card glass">
+            <div class="card-body ">
+              <h2 class="card-title">What is event loop & how it works?</h2>
+              <p>The event loop is a fundamental concept in JavaScript that allows for the asynchronous execution of code. <br>
+
+                At a high level, the event loop is a mechanism that JavaScript uses to manage the execution of code. When a script is executed, it is processed line-by-line by the JavaScript engine. However, some operations in JavaScript are non-blocking, meaning that they do not wait for a result before moving on to the next line of code. These non-blocking operations, like I/O operations or setTimeout, are instead passed off to the browser or operating system to be executed asynchronously. <br>
+                
+                The event loop is a loop that constantly checks the execution stack and the message queue for new messages to execute. When the execution stack is empty, the event loop will take the first message from the message queue and push it onto the execution stack, where it will be executed. This process repeats as long as there are messages in the queue. <br>
+                
+                The event loop is what allows JavaScript to handle multiple tasks simultaneously without blocking the execution of other code. It enables the efficient handling of I/O operations, animations, and other asynchronous tasks in web applications.</p>
+            </div>
+          </div>
+        <div class="card glass">
+            <div class="card-body ">
+              <h2 class="card-title">Difference of map filter foreach and find</h2>
+              <p>1.Map: A map function is a function that applies a given function to each element of a collection (e.g., an array) and returns a new collection with the results. The new collection has the same length as the original one, but each element is transformed by the given function. <br>
+
+                2.Filter: A filter function is a function that takes a collection (e.g., an array) and a predicate function, and returns a new collection that contains only the elements that satisfy the predicate. In other words, the filter function "filters out" the elements that don't match the given criteria. <br>
+                
+                3.Find: A find function is a method or function that searches a collection (e.g., an array) for an element that satisfies a given condition, and returns the first matching element. If no element matches the condition, the function returns null or undefined. <br>
+                
+                4.ForEach: A forEach method is a function that iterates over a collection (e.g., an array) and applies a given function to each element, but it does not create a new collection. Instead, it performs some action (e.g., logging, updating a variable) on each element.</p>
+            </div>
+          </div>
+    </div>
 </body>
 </html>
